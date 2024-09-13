@@ -1,0 +1,174 @@
+/* Original Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #b86d6d, #0a4c53);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+h1 {
+    background: linear-gradient(135deg, #b86d6d, #0a4c53);
+    color: #fff;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    box-shadow: 4px 4px 8px #221b1b;
+    width: 1244px;
+    margin: 200px;
+}
+
+.card-container:hover {
+    transform: scale(1.02);
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px black;
+    width: 340px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100vh;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #8dcab2;
+}
+
+.card-content {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0 0 8px 0;
+}
+
+.card-description {
+    font-size: 1em;
+    color: black;
+    margin: 0 0 16px 0;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.card-description:hover {
+    color: #fff;
+}
+
+.card button {
+    width: 50%;
+    height: 5vh;
+    text-align: center;
+    align-self: center;
+}
+
+.card button:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Responsive Styles */
+
+/* For devices with width up to 1200px */
+@media (max-width: 1200px) {
+    .card-container {
+        width: 100%;
+        padding: 20px;
+        margin: 100px 0;
+    }
+
+    .card {
+        width: 300px;
+        height: auto;
+    }
+}
+
+/* For tablets and devices with width up to 768px */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .card-container {
+        gap: 30px;
+        padding: 20px;
+        margin: 80px 0;
+    }
+
+    .card {
+        width: 250px;
+        height: auto;
+    }
+
+    .card-content {
+        padding: 12px;
+    }
+
+    .card-title {
+        font-size: 1.2em;
+    }
+
+    .card button {
+        width: 60%;
+        height: 4vh;
+    }
+}
+
+/* For mobile devices with width up to 480px */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        margin: 50px 0;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-content {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1.1em;
+    }
+
+    .card-description {
+        font-size: 0.9em;
+    }
+
+    .card button {
+        width: 80%;
+        height: 4vh;
+    }
+}
